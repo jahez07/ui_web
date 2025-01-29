@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: black;
   --foreground: #171717;
 }
 
@@ -18,27 +18,24 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-html{
+  justify-content: center;
+  align-items: center;
   cursor: none;
 }
 
 .cursor{
-  width: 6px;
-  height: 6px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  position: fixed;
-  z-index: 999;
-  background-color: black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
-.follower-cursor{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid black;
-  position: fixed;
-  z-index: 999;
+.outer{
+  border: 1px solid #f7f7f770;
+}
+
+.inner{
+  background: #f7f7f720;
 }
