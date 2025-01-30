@@ -1,12 +1,22 @@
-
+"use client";
+//import { useEffect, useRef } from "react";
 import CustomCursor from "../../components/CustomCursor";
 
 export default function Home() {
+  //const appRef = useRef(null);
+  //const toRef = useRef(null);
+
+  //useEffect(() => {
+    //document.addEventListener("mousemove", moveGradient);
+    //return function cleanup(){
+    //  document.removeEventListener("mousemove", moveGradient);
+    //}
+  //}, [appRef]);
   return (
-    <main>
+    <main className="app" id="app">
       <CustomCursor />
       <div>
-        <h1>Hello World</h1>
+        
       </div>
     </main>
   );
